@@ -91,7 +91,7 @@ export default function SignIn() {
     {/* <div className="mt-16 mb-16 flex h-full w-full items-center justify-center px-2 md:mx-0 md:px-0 lg:mb-10 lg:items-center lg:justify-start">
       
       
-    </div> */}
+    </div> */} 
     </>
   );
 }

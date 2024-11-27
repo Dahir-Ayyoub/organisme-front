@@ -22,6 +22,7 @@ import {
   
 } from "react-icons/md";
 import HomePage from "views/user/HomePage";
+import Management from "views/admin/management";
 
 const routes = [
   {
@@ -37,6 +38,13 @@ const routes = [
     icon: <MdBarChart className="h-6 w-6" />,
     path: "data-tables",
     component: <DataTables />,
+  },
+  {
+    name: "Management",
+    layout: "/admin",
+    icon: <MdBarChart className="h-6 w-6" />,
+    path: "management",
+    component: <Management />,
   },
   {
     name: "Cards",

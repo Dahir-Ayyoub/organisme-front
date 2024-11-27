@@ -9,14 +9,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .contain {
   min-height: 100vh;
   width: 700px;
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  background: #fff;
+  /* background: #fff; */
   /* background: linear-gradient(to right, white, #aaa4dd, white);  font-family: 'Fira Sans', sans-serif; */
 }
 

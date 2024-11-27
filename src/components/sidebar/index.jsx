@@ -55,15 +55,6 @@ const Sidebar = ({ open, onClose }) => {
 //   </div>
 
 
-
-
-
-
-    
-
-
-
-
 //       <div class="mt-[58px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
 //       {/* Nav item */}
 
@@ -120,7 +111,7 @@ const Sidebar = ({ open, onClose }) => {
 
       {/* Sidebar Card */}
       <div className="flex justify-center mt-6">
-        <SidebarCard />
+        {/* <SidebarCard /> */}
       </div>
     </div>
   );
