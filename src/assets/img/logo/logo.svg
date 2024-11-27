@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Background Glow Effect -->
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C3B6E;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:0.1"/>
+    </linearGradient>
+    <!-- Circular Progress Definition -->
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#1C3B6E;stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="150" cy="150" r="120" fill="url(#bgGlow)"/>
+
+  <!-- Tracking Circle (Management Ring) -->
+  <circle cx="150" cy="150" r="110" 
+          stroke="url(#progressGrad)" 
+          stroke-width="4" 
+          fill="none"
+          stroke-dasharray="690"
+          stroke-dashoffset="172">
+    <animate attributeName="stroke-dashoffset" 
+             from="690" to="172" 
+             dur="2s" 
+             fill="freeze"/>
+  </circle>
+
+  <!-- Progress Markers -->
+  <g fill="#4A90E2">
+    <circle cx="150" cy="40" r="3"/>
+    <circle cx="260" cy="150" r="3"/>
+    <circle cx="150" cy="260" r="3"/>
+    <circle cx="40" cy="150" r="3"/>
+  </g>
+
+  <!-- Enhanced Graduation Cap Base -->
+  <path d="M150 60 L270 120 L150 180 L30 120 Z" 
+        fill="#1C3B6E" 
+        stroke="#152D54" 
+        stroke-width="3"/>
+  
+  <!-- Refined Digital Grid Pattern -->
+  <path d="M90 110 L210 110 M90 135 L210 135 M90 160 L210 160" 
+        stroke="#4A90E2" 
+        stroke-width="0.8" 
+        stroke-opacity="0.6"
+        fill="none"/>
+  
+  <path d="M110 90 L110 170 M140 90 L140 170 M170 90 L170 170 M200 90 L200 170" 
+        stroke="#4A90E2" 
+        stroke-width="0.8" 
+        stroke-opacity="0.6"
+        fill="none"/>
+  
+  <!-- Management Chart Lines -->
+  <g stroke="#4A90E2" stroke-width="1" stroke-opacity="0.6">
+    <path d="M80 200 L100 190 L120 195 L140 185 L160 180 L180 175 L200 170"
+          fill="none">
+      <animate attributeName="stroke-dasharray" 
+               values="0,1000;1000,0" 
+               dur="2s" 
+               fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- Enhanced Matrix Dots with Glow -->
+  <g fill="#FFFFFF">
+    <circle cx="110" cy="110" r="4">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="110" r="4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="135" r="4">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="135" r="4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="160" r="4">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="160" r="4">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Data Flow Lines hada -->
+  <g stroke="#4A90E2" stroke-width="1" opacity="0.2">
+    <path d="M110 110 L170 110 L140 135 L200 135 L170 160 L110 160">
+      <animate attributeName="stroke-dasharray" values="1,1000;1000,0" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Enhanced Tassel Element -->
+  <g>
+    <path d="M150 180 L150 230" 
+          stroke="#4A90E2" 
+          stroke-width="2.5"/>
+    <path d="M150 230 Q165 245 150 260 Q135 245 150 230" 
+          fill="#4A90E2">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        values="0 150 230; 10 150 230; 0 150 230"
+        dur="3s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Management Indicators -->
+  <g fill="#4A90E2" opacity="0.8">
+    <circle cx="80" cy="200" r="2"/>
+    <circle cx="120" cy="195" r="2"/>
+    <circle cx="160" cy="180" r="2"/>
+    <circle cx="200" cy="170" r="2"/>
+  </g>
+</svg>
