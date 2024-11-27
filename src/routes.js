@@ -13,23 +13,26 @@ import SignIn from "views/auth/SignIn";
 // Icon Imports
 import {
   MdHome,
-  MdBarChart,
+  MdPieChart,
   MdPerson,
-  MdLock,
+  MdBarChart,
+  MdCalendarMonth,
   MdContentCopy,
+  MdViewColumn,
   MdOutlineSettingsAccessibility,
   MdOutlinePowerSettingsNew,
   
 } from "react-icons/md";
 import HomePage from "views/user/HomePage";
 import Management from "views/admin/management";
+import Absence from "views/admin/absence";
 
 const routes = [
   {
     name: "Dashboard",
     layout: "/admin",
     path: "default",
-    icon: <MdHome className="h-6 w-6" />,
+    icon: <MdPieChart className="h-6 w-6" />,
     component: <MainDashboard />,
   },
   {
@@ -42,9 +45,17 @@ const routes = [
   {
     name: "Management",
     layout: "/admin",
-    icon: <MdBarChart className="h-6 w-6" />,
+    icon: <MdViewColumn className="h-6 w-6" />,
     path: "management",
     component: <Management />,
+  },
+  {
+    name: "Absence",
+    layout: "/admin",
+    path: "absence",
+    // icon: <MdLock className="h-6 w-6" />,
+    icon: <MdCalendarMonth className="h-6 w-6" />,
+    component: <Absence />,
   },
   {
     name: "Cards",

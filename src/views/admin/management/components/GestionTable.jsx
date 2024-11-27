@@ -13,6 +13,7 @@ import {
 } from "@tanstack/react-table";
 import AddForm from "components/reusable/AddForm";
 import ImportForm from "components/reusable/ImportForm";
+import MiniCalendar from "components/calendar/MiniCalendar";
 
 function GestionTable(props) {
   const [isAddFormOpen, setIsAddFormOpen] = useState(false);
@@ -149,6 +150,7 @@ function GestionTable(props) {
     debugTable: true,
   });
   return (
+    <>
     <Card extra={"w-full h-full sm:overflow-auto px-6"}>
       <header className="relative flex items-center justify-between pt-4">
         <div className="text-xl font-bold text-navy-700 dark:text-white">
@@ -236,6 +238,8 @@ function GestionTable(props) {
       {isAddFormOpen && <AddForm onClose={handleCloseAddForm} />}
       {isImportFormOpen && <ImportForm onClose={handleCloseImportForm} />}
     </Card>
+    
+    </>
   );
 }
 
