@@ -31,8 +31,6 @@ const Home = () => {
             <img className="w-4/5 rounded-2xl" src={headerImage} alt="" />
           </div>
         </div>
-      {/* </div>
-    </div> */}
     </>
   );
 };

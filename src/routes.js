@@ -5,6 +5,7 @@ import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/tables";
+
 // import RTLDefault from "views/rtl/default";
 
 // Auth Imports
@@ -21,11 +22,19 @@ import {
   MdViewColumn,
   MdOutlineSettingsAccessibility,
   MdOutlinePowerSettingsNew,
+  MdOutlineSupervisorAccount,
+  MdOutlineClass,
   
 } from "react-icons/md";
 import HomePage from "views/user/HomePage";
 import Management from "views/admin/management";
 import Absence from "views/admin/absence";
+import SchoolForm from "components/reusable/SchoolForm";
+import ClassManagementPage from "components/user/teacher/ClassManagementPage";
+import ClassManagement from "views/teacher";
+import ParentDash from "views/parent";
+import StudentDash from "views/student";
+import TeacherDashboard from "views/teacher2";
 
 const routes = [
   {
@@ -39,7 +48,7 @@ const routes = [
     name: "Tables",
     layout: "/admin",
     icon: <MdBarChart className="h-6 w-6" />,
-    path: "data-tables",
+    path: "tables",
     component: <DataTables />,
   },
   {
@@ -48,6 +57,13 @@ const routes = [
     icon: <MdViewColumn className="h-6 w-6" />,
     path: "management",
     component: <Management />,
+  },
+  {
+    name: "school",
+    layout: "/admin",
+    icon: <MdViewColumn className="h-6 w-6" />,
+    path: "school",
+    component: <SchoolForm />,
   },
   {
     name: "Absence",
@@ -65,7 +81,40 @@ const routes = [
     component: <NFTMarketplace />,
     secondary: true,
   },
+  {
+    name: "ClassManagement",
+    layout: "/admin",
+    path: "class",
+    icon: <MdOutlineClass className="h-6 w-6" />,
+    component: <ClassManagement />,
+    secondary: true,
+  },
+  {
+    name: "TeachDash",
+    layout: "/admin",
+    path: "teacherdash",
+    icon: <MdOutlineClass className="h-6 w-6" />,
+    component: <TeacherDashboard />, 
+    secondary: true,
+  },
   
+  
+  {
+    name: "ParentDash",
+    layout: "/admin",
+    path: "parent",
+    icon: <MdOutlineSupervisorAccount className="h-6 w-6" />,
+    component: <ParentDash/>,
+    secondary: true,
+  },
+  {
+    name: "StudentDash",
+    layout: "/admin",
+    path: "student",
+    icon: <MdOutlineSupervisorAccount className="h-6 w-6" />,
+    component: <StudentDash />,
+    secondary: true,
+  },
   {
     name: "Profile",
     layout: "/admin",
@@ -86,15 +135,8 @@ const routes = [
     path: "sign-in",
     // icon: <MdLock className="h-6 w-6" />,
     icon: <MdOutlinePowerSettingsNew className="h-6 w-6" />,
-    component: <SignIn />,
+    // component: <SignIn />,
   },
-  
-  // {
-  //   name: "RTL Admin",
-  //   layout: "/rtl",
-  //   path: "rtl",
-  //   icon: <MdHome className="h-6 w-6" />,
-  //   component: <RTLDefault />,
-  // },
+
 ];
 export default routes;

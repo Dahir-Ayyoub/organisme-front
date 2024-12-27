@@ -6,8 +6,8 @@ import Features from "components/user/home/Features";
 import '../../assets/css/output.css';
 import Statistics from "components/user/home/Statistic";
 import Contactus from "components/user/home/Contactus";
-import { Route, Routes } from "react-router-dom";
-import LoginSignupForm from "components/user/login/LoginSignupForm";
+import ParticleRing from "components/core/ParticleRing";
+import { Gifts } from "components/user/home/Gifts";
 
 function HomePage() {
   return (
@@ -19,11 +19,9 @@ function HomePage() {
           <Statistics />
           <Features />
           <Contactus />
+          <Gifts />
+          <ParticleRing />
           <Footer />
-          <Routes>
-
-        <Route to ='/login' element={<LoginSignupForm />} />
-    </Routes>
     </div>
     
   );

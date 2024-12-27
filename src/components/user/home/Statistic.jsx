@@ -4,11 +4,20 @@ import statisticsData from '../../../variables/statisticsData';
 import imgSrc from '../../../assets/img/user-homepage/header.png';
 import LazyLoad from './LazyLoad';
 
+
 function Statistics() {
   useEffect(() => {
+      /* Checks if any elements in the document have the `countTo` attribute.
+    * If found, selects all such elements and stores them in the `numbers` variable.
+    * Typically used for applying count-up animations to these elements. */
     if (document.querySelector("[countTo]")) {
       let numbers = document.querySelectorAll("[countTo]");
 
+          /* Goes through each element with the `countTo` attribute:
+      * - Gets the element's `id` and target number (`countTo` value).
+      * - If it has `data-decimal`, animates with one decimal place.
+      * - Uses `CountUp` to animate the number from 0 to the target.
+      * - If there's an error, shows the target number instead and logs the error. */
       numbers.forEach((number) => {
         let ID = number.getAttribute("id");
         let value = number.getAttribute("countTo");

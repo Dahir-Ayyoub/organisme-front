@@ -3,6 +3,9 @@ import logoNav from '../../../assets/img/logo/logo.svg';
 import { Link } from 'react-router-dom';
 
 function Nav() {
+  /* The code snippet `const [isOpen, setIsOpen] = useState(false);` is using the `useState` hook from
+  React to create a state variable `isOpen` and a function `setIsOpen` to update the value of
+  `isOpen`. The initial value of `isOpen` is set to `false`. */
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

@@ -2,3 +2,9 @@ react-icons
 react-big-calendar
 moment
 react-select
+lucide-react
+recharts
+date-fns
+@radix-ui/react-slot 
+class-variance-authority
+react-toastify

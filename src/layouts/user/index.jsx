@@ -6,13 +6,7 @@ import HomePage from 'views/user/HomePage'
 function User() {
   return (
     <>
-   
-    {/* <LoginSignupForm /> */}
     <HomePage />
-    {/* <Routes>
-      <Route to ='/user' element={ <HomePage />} />
-
-    </Routes> */}
     </>
   )
 }

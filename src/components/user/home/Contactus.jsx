@@ -3,10 +3,15 @@ import LazyLoad from './LazyLoad';
 
 function ContactUs() {
   return (
+   /* `<LazyLoad>` is a component being used in the ContactUs component. It is a custom
+   component that helps with lazy loading content, which means that the content inside `<LazyLoad>`
+   will only be loaded when it is needed or when it becomes visible on the screen. This can help
+   improve performance by loading content asynchronously and reducing the initial load time of the
+   page. */
     <LazyLoad >
     <section className="bg-white dark:bg-gray-800" id='contactus'>
       <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-        <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+        <h2 className="text-3xl font-bold text-black dark:text-white sm:text-4xl">
           <span className="block">Vous avez des questions ?</span>
           <span className="block text-indigo-500">Contactez-nous dès aujourd'hui.</span>
         </h2>
